@@ -1,0 +1,25 @@
+{
+  "name": "js_vrimage",
+  "version": "1.0.0",
+  "description": "VR Experience with still images and Google Cardboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@onepopcorn",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.4.0",
+    "browser-sync": "^2.9.11",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-browatchify": "0.0.0",
+    "gulp-ruby-sass": "^2.0.5",
+    "uglifyify": "^3.0.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "raf": "^3.1.0",
+    "three": "^0.73.0"
+  }
+}

@@ -1,0 +1,8 @@
+.DS_Store
+.[Tt]humbs
+npm-debug.log
+
+.sass-cache/
+node_modules/
+bower_components/
+dest/
