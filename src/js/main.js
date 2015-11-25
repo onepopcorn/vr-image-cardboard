@@ -3,15 +3,12 @@ import {Mesh,
 		Scene, 
 		Texture, 
 		ImageUtils, 
-		// StereoEffect,
 		WebGLRenderer, 
-		// SphereGeometry,
-		BoxGeometry, 
+		SphereGeometry,
 		PerspectiveCamera, 
 		MeshBasicMaterial, 
-		// MeshPhongMaterial, 
-		// MeshLambertMaterial, 
 		// DeviceOrientationControls
+		DoubleSide
 		} from 'three';
 
 let width = window.innerWidth;
@@ -35,22 +32,21 @@ function init(){
 	
 	container.appendChild(renderer.domElement);
 
-	let boxGeom = new BoxGeometry(1,1,1);
-	let boxMat = new MeshBasicMaterial({color:0xfb4466});
-	
-	box = new Mesh(boxGeom,boxMat);
+	let geom = new SphereGeometry(1000,32,32);
+	let mat = new MeshBasicMaterial({color:0xffffff});
+	mat.side = DoubleSide;
+	sphere = new Mesh(geom,mat);
+	scene.add(sphere);
 
-	scene.add(box);
-
-	camera.position.z = 5;
+	camera.position.z = 30;
 
 	// Start render chain
 	raf(update);
 }
 
 function update(){
-	box.rotation.y +=.01;
-	box.rotation.x +=.01;
+	// box.rotation.y +=.01;
+	// box.rotation.x +=.01;
 	render();
 	raf(update);
 }
