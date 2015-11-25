@@ -17,10 +17,10 @@ var paths = {
 		images: ['./src/images/**/*.png','./src/images/**/*.jpg','./src/images/**/*.gif']
 	},
 	dest : {
-		html: './bin',
-		js: './bin/js',
-		css: './bin/css',
-		images: './bin/images'
+		html: './dest',
+		js: './dest/js',
+		css: './dest/css',
+		images: './dest/images'
 	}
 }
 
@@ -76,7 +76,7 @@ gulp.task('watch',function(){
 gulp.task('server',function(){
 	sync({
 		server:{
-			baseDir:'./bin'
+			baseDir:'./dest'
 		}
 	})
 });
