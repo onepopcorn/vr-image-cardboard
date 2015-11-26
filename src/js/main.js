@@ -20,7 +20,8 @@ let box,
 	scene,
 	sphere,
 	sphere2,
-	control, 
+	control_l, 
+	control_r, 
 	renderer, 
 	texture_l, 
 	texture_r, 
@@ -32,7 +33,7 @@ function init(){
 	setup();
 
 	texture_l = ImageUtils.loadTexture('images/texture_l.jpg');
-	texture_r = ImageUtils.loadTexture('images/texture_l.jpg');
+	texture_r = ImageUtils.loadTexture('images/texture_r.jpg');
 
 	let geom = new SphereGeometry(1000,32,32);
 	let mat = new MeshBasicMaterial({map:texture_l});
@@ -47,10 +48,11 @@ function init(){
 	sphere2.position.x = 5000;
 	scene.add(sphere2);
 
-	cameraLeft.position.z = 3000;
-	cameraRight.position.z = 3000;
+	cameraLeft.position.z = 30;
+	cameraRight.position.z = 30;
 
-	control = new DeviceOrientationControls(cameraLeft);
+	control_l = new DeviceOrientationControls(cameraLeft);
+	control_r = new DeviceOrientationControls(cameraRight);
 
 	// Start render chain
 	raf(update);
@@ -72,9 +74,8 @@ function preload(){
 }
 
 function update(){
-	// sphere.rotation.y +=.005;
-	// sphere2.rotation.y +=.005;
-	control.update();
+	control_l.update();
+	control_r.update();
 	render();
 	raf(update);
 }
@@ -92,8 +93,16 @@ function render(){
 }
 
 function resize(){
-	// camera.aspect = window.innerWidth / window.innerHeight; 
-	// camera.updateProjectionMatrix();
+	width = window.innerWidth;
+	height = window.innerHeight;
+
+
+	cameraLeft.aspect = width * 0.5 / height;
+	cameraRight.aspect = width * 0.5 / height;
+
+	cameraLeft.updateProjectionMatrix();
+	cameraRight.updateProjectionMatrix();
+
 	renderer.setSize(window.innerWidth,window.innerHeight);
 }
 
