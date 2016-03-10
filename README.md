@@ -1,11 +1,13 @@
 # VR Image
 
-VR Experience with still images and Google Cardboard
+VR Experience with still images and [Google Cardboard](https://www.google.com/get/cardboard/)
 
 ## Overview
 
-This project has been made with edge technologies like ECMASCRIPT6 - with [Babel](https://babeljs.io/) - or [Browserify](http://browserify.org/) to handle modules. All tied togheter with [Gulp](http://gulpjs.com/).
-To use it just follow installation instructions
+This project has been made with technologies like ECMASCRIPT6 - with [Babel](https://babeljs.io/) - or [Browserify](http://browserify.org/) to handle modules. All tied togheter with [Gulp](http://gulpjs.com/).
+To use it just follow installation instructions.
+
+This experience is designed to be used with [Google's VR CardBoard](https://www.google.com/get/cardboard/) although you can see the results with Google's Chrome using the [sensors emulation](https://developers.google.com/web/tools/chrome-devtools/iterate/device-mode/device-input-and-sensors). 
 
 ## Installation
 
