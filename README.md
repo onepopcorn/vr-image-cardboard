@@ -27,6 +27,10 @@ npm install
 
 When finished use `gulp` to start the development environment. If you just want compile for production use `gulp compile` 
 
+## License
+
+This project is licensed under GNU GPL. For more information look LICENSE.txt file 
+
 ## TO DO
 
 * Make a browser minimum capabilities to allow the experience
