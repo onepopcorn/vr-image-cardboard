@@ -11,7 +11,7 @@ This experience is designed to be used with [Google's VR CardBoard](https://www.
 
 ## Installation
 
-This project uses [NodeJS](http://nodejs.org), [Gulp](http://gulpjs.com/), [Ruby](http://rubyinstaller.org/) & [SASS](http://sass-lang.com/)
+This project uses [NodeJS](http://nodejs.org) v5.8.0 64-bit, [Gulp](http://gulpjs.com/), [Ruby](http://rubyinstaller.org/) & [SASS](http://sass-lang.com/)
 
 Install node & ruby with the links above. After that install SASS with:
 

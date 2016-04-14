@@ -10,11 +10,11 @@
   "license": "ISC",
   "devDependencies": {
     "babelify": "^6.4.0",
-    "browser-sync": "^2.9.11",
-    "del": "^2.0.2",
-    "gulp": "^3.9.0",
+    "browser-sync": "^2.12.3",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
     "gulp-browatchify": "0.0.0",
-    "gulp-ruby-sass": "^2.0.5",
+    "gulp-ruby-sass": "^2.0.6",
     "uglifyify": "^3.0.1",
     "vinyl-source-stream": "^1.1.0"
   },
