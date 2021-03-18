@@ -4,7 +4,12 @@
   "description": "VR Experience with still images and Google Cardboard",
   "main": "index.js",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "8.9.0",
+    "npm": "5.1.1"
   },
   "author": "@onepopcorn",
   "license": "ISC",
